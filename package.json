@@ -1,6 +1,6 @@
 {
   "name": "oklink-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is a non-official JS SDK API for calling OKLink's API product.",
   "type": "module",
   "main": "build/main.js",

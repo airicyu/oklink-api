@@ -1,6 +1,6 @@
 # oklink-api
 
-This is a non-official JS SDK API for calling OKLink's API product.
+This is a non-official JS SDK API for calling [OKLink's API product](https://www.oklink.com/hk).
 
 Features:
 - Helper to call APIs generally
