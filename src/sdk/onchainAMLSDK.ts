@@ -162,7 +162,7 @@ export class OnChainAMLSDK {
         addressRiskScreening: async ({ network, address }: { network: string; address: string }) => {
             return this.#apiCaller.call({ path: '/api/v5/tracker/kya/address-risk-screening', params: { network, address } })
         },
-        createddressMonitoring: async ({
+        createAddressMonitoring: async ({
             network,
             address,
             note,
@@ -181,7 +181,7 @@ export class OnChainAMLSDK {
         }) => {
             return this.#apiCaller.call({
                 method: 'POST',
-                path: '/api/v5/tracker/kya/creat-address-monitoring',
+                path: '/api/v5/tracker/kya/create-address-monitoring',
                 data: { network, address, note, trigger, duration, phone, email },
             })
         },

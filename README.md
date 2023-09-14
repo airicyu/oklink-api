@@ -60,7 +60,7 @@ console.log('Example 2: POST method with post body')
 console.log(
     await api.call({
         method: 'POST',
-        path: '/api/v5/tracker/kya/creat-address-monitoring',
+        path: '/api/v5/tracker/kya/create-address-monitoring',
         // data: Post body
         data: {
             duration: '30D',
@@ -149,7 +149,7 @@ console.log(
  * Example 2: POST method with post body
  */
 console.log(
-    await onChainAMLSDK.kya.createddressMonitoring({
+    await onChainAMLSDK.kya.createAddressMonitoring({
         duration: '30D',
         trigger: 'BLACK_TYPE',
         note: 'binance',
@@ -204,7 +204,7 @@ parameters:
 
 ## ApiResult (API result wrapper)
 
-It is thin wrapper of the V5 API's raw response result. It has the following attributes:
+It is thin wrapper of the API's raw response result. It has the following attributes:
 
 - code (string)
 - msg (string)
@@ -220,7 +220,7 @@ It also has a method of `getOrThrow`, which return the `data` if success, or thr
 
 ## ApiError (Error wrapper)
 
-just an Error wrapping V5-API's code and message.
+just an Error wrapping API's code and message.
 
 ```javascript
 export class ApiError extends Error {
@@ -362,7 +362,7 @@ export declare class OnChainAMLSDK {
             address: string;
         }) => Promise<import("../main.js").ApiResult>;
 
-        createddressMonitoring: ({ network, address, note, trigger, duration, phone, email, }: {
+        createAddressMonitoring: ({ network, address, note, trigger, duration, phone, email, }: {
             network: string;
             address: string;
             note?: string | undefined;

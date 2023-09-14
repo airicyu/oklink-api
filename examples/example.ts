@@ -35,7 +35,7 @@ console.log('Example 2: POST method with post body')
 console.log(
     await api.call({
         method: 'POST',
-        path: '/api/v5/tracker/kya/creat-address-monitoring',
+        path: '/api/v5/tracker/kya/create-address-monitoring',
         data: {
             duration: '30D',
             trigger: 'BLACK_TYPE',
@@ -67,7 +67,7 @@ console.log(
  * Example 2: POST method with post body
  */
 console.log(
-    await onChainAMLSDK.kya.createddressMonitoring({
+    await onChainAMLSDK.kya.createAddressMonitoring({
         duration: '30D',
         trigger: 'BLACK_TYPE',
         note: 'binance',
