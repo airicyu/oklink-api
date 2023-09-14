@@ -350,12 +350,7 @@ export declare class OnChainAMLSDK {
     };
 
     kya: {
-        chainList: ({ chainFullName, chainShortName, chainId, network, }: {
-            chainFullName?: string | undefined;
-            chainShortName?: string | undefined;
-            chainId?: string | undefined;
-            network?: string | undefined;
-        }) => Promise<import("../main.js").ApiResult>;
+        chainList: () => Promise<import("../main.js").ApiResult>;
 
         addressRiskLevel: ({ network, address }: {
             network: string;

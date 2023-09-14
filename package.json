@@ -1,6 +1,6 @@
 {
   "name": "oklink-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a non-official JS SDK API for calling OKLink's API product.",
   "type": "module",
   "main": "build/main.js",
@@ -28,7 +28,7 @@
   ],
   "license": "ISC",
   "devDependencies": {
-    "@tsconfig/node18": "^18.2.2",
+    "@tsconfig/node18": "^1.0.1",
     "@types/jest": "^29.5.4",
     "@types/node": "^18.11.12",
     "@typescript-eslint/eslint-plugin": "^6.7.0",

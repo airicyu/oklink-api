@@ -153,18 +153,8 @@ export class OnChainAMLSDK {
     }
 
     kya = {
-        chainList: async ({
-            chainFullName,
-            chainShortName,
-            chainId,
-            network,
-        }: {
-            chainFullName?: string
-            chainShortName?: string
-            chainId?: string
-            network?: string
-        }) => {
-            return this.#apiCaller.call({ path: '/api/v5/tracker/kya/chain-list', params: { chainFullName, chainShortName, chainId, network } })
+        chainList: async () => {
+            return this.#apiCaller.call({ path: '/api/v5/tracker/kya/chain-list' })
         },
         addressRiskLevel: async ({ network, address }: { network: string; address: string }) => {
             return this.#apiCaller.call({ path: '/api/v5/tracker/kya/address-risk-level', params: { network, address } })
